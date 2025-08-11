@@ -33,3 +33,17 @@ Open http://localhost:3000 and submit the form.
 - POST /twilio/voice/status
 
 Set your Twilio Voice number webhooks to your PUBLIC_BASE_URL equivalents.
+
+## One-click UI (Streamlit)
+
+```
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+Use the sidebar to:
+- Start backend
+- Create an ngrok tunnel (optional)
+- Auto-configure your Twilio number
+
+The tabs let you submit leads, simulate Twilio flows, chat, and view leads.
