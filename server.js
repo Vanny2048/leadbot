@@ -30,6 +30,28 @@ app.get('/health', (req, res) => {
   res.json({ ok: true, uptimeSec: process.uptime() });
 });
 
+// Simple debug: list leads (do not expose in production without auth)
+app.get('/leads', (req, res) => {
+  try {
+    const rows = db.prepare('SELECT * FROM leads ORDER BY id DESC LIMIT 50').all();
+    res.json(rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Failed to list leads' });
+  }
+});
+
+app.get('/leads/:id', (req, res) => {
+  try {
+    const row = db.prepare('SELECT * FROM leads WHERE id = ?').get(req.params.id);
+    if (!row) return res.status(404).json({ error: 'Not found' });
+    res.json(row);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Failed to get lead' });
+  }
+});
+
 // Create a lead (e.g., from website form or DM). Triggers outbound call attempt.
 app.post('/leads', async (req, res) => {
   try {
