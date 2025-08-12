@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EDEN USA — Rent Staging, Lighting, Sound, AV</title>
+  <meta name="description" content="EDEN USA provides staging, rigging, audio/visual, lighting design, LED walls, truss structures, live streaming, power services, delivery and setup, pipe and drape, and DJ equipment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/website/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-primary">EDEN</span> <span class="brand-muted">USA</span>
+        <div class="tagline">Rent Staging, Lighting, Sound, AV</div>
+      </div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#quote">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Full-Service Event Production Rentals</h1>
+        <p>From stages and truss to LED walls and audio—delivered, set up, and operated by seasoned pros.</p>
+        <a class="btn btn-primary" href="#quote">Request a quote</a>
+      </div>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1400&auto=format&fit=crop" alt="Concert lighting and stage" />
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Production Services</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?q=80&w=1200&auto=format&fit=crop" alt="Stage and rigging" />
+          <h3>Stage and Rigging</h3>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1200&auto=format&fit=crop" alt="Audio visual engineer at a console" />
+          <h3>Audio/Visual</h3>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1200&auto=format&fit=crop" alt="Lighting design at a live show" />
+          <h3>Lighting Design</h3>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1598387993441-c524928198e1?q=80&w=1200&auto=format&fit=crop" alt="LED wall and projection" />
+          <h3>LED Walls and Projection</h3>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1542785291-49a9f7c7c8d2?q=80&w=1200&auto=format&fit=crop" alt="Truss structure" />
+          <h3>Truss Structures</h3>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1602935553097-43f8b8c05291?q=80&w=1200&auto=format&fit=crop" alt="Live streaming and hybrid events" />
+          <h3>Live Streaming & Hybrid Events</h3>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1604335399100-2b8fef88d3d7?q=80&w=1200&auto=format&fit=crop" alt="Power distribution and cabling" />
+          <h3>Power & Electrical Services</h3>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop" alt="Crew doing setup on stage" />
+          <h3>Delivery, Setup, and Takedown</h3>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?q=80&w=1200&auto=format&fit=crop" alt="Pipe and drape backdrop" />
+          <h3>Pipe and Drape</h3>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1492683513054-55277abccd3c?q=80&w=1200&auto=format&fit=crop" alt="DJ equipment" />
+          <h3>DJ Equipment</h3>
+        </article>
+      </div>
+      <div class="cta-center">
+        <a class="btn btn-secondary" href="#quote">Get a fast quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote" class="quote">
+    <div class="container">
+      <h2>Request a Quote</h2>
+      <p class="muted">Fill out the form and our team will follow up quickly with pricing and availability.</p>
+
+      <!-- Netlify will detect this HTML form and store submissions in the dashboard -->
+      <form class="form" name="quote" method="POST" action="/thanks.html" netlify netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="quote" />
+        <p class="hidden">
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div class="fields">
+            <label>
+              First Name
+              <input type="text" name="first_name" autocomplete="given-name" required />
+            </label>
+            <label>
+              Last Name
+              <input type="text" name="last_name" autocomplete="family-name" required />
+            </label>
+            <label>
+              Company (optional)
+              <input type="text" name="company" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" autocomplete="tel" required />
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Services Needed</legend>
+          <div class="checkboxes">
+            <label><input type="checkbox" name="services" value="Stage and Rigging" /> Stage and rigging</label>
+            <label><input type="checkbox" name="services" value="Audio/Visual" /> Audio/visual</label>
+            <label><input type="checkbox" name="services" value="Lighting Design" /> Lighting design</label>
+            <label><input type="checkbox" name="services" value="LED Walls and Projection" /> LED walls and projection</label>
+            <label><input type="checkbox" name="services" value="Truss Structures" /> Truss structures</label>
+            <label><input type="checkbox" name="services" value="Live Streaming and Hybrid Events" /> Live streaming and hybrid events</label>
+            <label><input type="checkbox" name="services" value="Power and Electrical Services" /> Power and electrical services</label>
+            <label><input type="checkbox" name="services" value="Delivery, Setup, and Takedown" /> Delivery, setup, and takedown</label>
+            <label><input type="checkbox" name="services" value="Pipe and Drape" /> Pipe and Drape</label>
+            <label><input type="checkbox" name="services" value="DJ Equipment" /> DJ Equipment</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Event Information</legend>
+          <div class="fields">
+            <label>
+              Start Date
+              <input type="date" name="start_date" />
+            </label>
+            <label>
+              Start Time
+              <input type="time" name="start_time" />
+            </label>
+            <label>
+              End Date
+              <input type="date" name="end_date" />
+            </label>
+            <label>
+              End Time
+              <input type="time" name="end_time" />
+            </label>
+            <label>
+              Venue is Unknown at this time
+              <input type="checkbox" name="venue_unknown" value="yes" />
+            </label>
+            <label>
+              Venue Name
+              <input type="text" name="venue_name" />
+            </label>
+            <label>
+              Venue Address
+              <input type="text" name="venue_address" />
+            </label>
+            <label>
+              Venue City
+              <input type="text" name="venue_city" />
+            </label>
+            <label>
+              Venue State
+              <select name="venue_state">
+                <option value="">Select State</option>
+                <option>AL</option><option>AK</option><option>AZ</option><option>AR</option>
+                <option>CA</option><option>CO</option><option>CT</option><option>DE</option>
+                <option>FL</option><option>GA</option><option>HI</option><option>ID</option>
+                <option>IL</option><option>IN</option><option>IA</option><option>KS</option>
+                <option>KY</option><option>LA</option><option>ME</option><option>MD</option>
+                <option>MA</option><option>MI</option><option>MN</option><option>MS</option>
+                <option>MO</option><option>MT</option><option>NE</option><option>NV</option>
+                <option>NH</option><option>NJ</option><option>NM</option><option>NY</option>
+                <option>NC</option><option>ND</option><option>OH</option><option>OK</option>
+                <option>OR</option><option>PA</option><option>RI</option><option>SC</option>
+                <option>SD</option><option>TN</option><option>TX</option><option>UT</option>
+                <option>VT</option><option>VA</option><option>WA</option><option>WV</option>
+                <option>WI</option><option>WY</option>
+              </select>
+            </label>
+            <label>
+              Venue ZIP
+              <input type="text" name="venue_zip" inputmode="numeric" pattern="[0-9]{5}" />
+            </label>
+            <label class="full">
+              Additional Information
+              <textarea name="additional_info" rows="5" placeholder="Anything else we should know (load-in limits, audience size, etc.)"></textarea>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Submit request</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand"><span class="brand-primary">EDEN</span> <span class="brand-muted">USA</span></div>
+        <div class="muted">edenusa.com</div>
+      </div>
+      <a class="btn btn-secondary" href="#quote">Request a quote</a>
+    </div>
+  </footer>
+</body>
+</html>
